@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head.ejs') %>
+
+    <!-- Form Stylesheet -->
+     <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <%- include('includes/header.ejs') %>
+
+
+    <!-- Login Start -->
+    <div id="form-container">
+        <form action="/login" method="post">
+            <div id="form-control">
+                <label for="username-email">Username or Email</label>
+                <input type="text" id="username-email" name="username-email" required>
+            </div>
+            <div id="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <!-- Log in button -->
+            <button type="submit" id="submit-button">Log in</button>
+    
+            <!-- Register link -->
+            <p>Don't have an account? <a href="/registration.html" id="register-link">Register</a></p>
+        </form>
+    </div>
+
+    <!-- Login End -->
+        
+
+    <%- include('includes/footer.ejs') %>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <%- include('includes/libraries.ejs') %>
+</body>
+
+</html>
